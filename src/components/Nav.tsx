@@ -1,6 +1,7 @@
 import { Bus, Home, Settings, Sparkles, UtensilsCrossed } from 'lucide-react';
 import { cx } from './ui';
 import { Wordmark } from './Logo';
+import { CoffeeButton, MadeWith } from './Support';
 
 const TABS = [
   { path: '/', label: 'Home', icon: Home },
@@ -57,7 +58,10 @@ export function SideNav({ current }: { current: string }) {
         <Sparkles size={19} />
         Ask Gati AI
       </a>
-      <p className="mt-auto px-3 text-[12px] leading-relaxed text-muted">An independent student-built utility. Not an official IIT Gandhinagar app.</p>
+      <div className="mt-auto flex flex-col items-start gap-3 px-3">
+        <CoffeeButton align="start" />
+        <MadeWith className="text-[12px] leading-relaxed text-muted" />
+      </div>
     </nav>
   );
 }

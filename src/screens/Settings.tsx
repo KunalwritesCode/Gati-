@@ -8,6 +8,7 @@ import { formatStamp } from '../lib/format';
 import { zoned } from '../lib/time';
 import { Banner, Button, Card, PageTitle, Segmented, SectionTitle, cx } from '../components/ui';
 import { StopPickerSheet } from '../components/StopPicker';
+import { CoffeeButton, MadeWith } from '../components/Support';
 
 function Row({ label, value, onClick, hint }: { label: string; value?: ReactNode; onClick?: () => void; hint?: string }) {
   const inner = (
@@ -194,7 +195,9 @@ export function Settings({ now, params }: { now: number; params: URLSearchParams
         <p>
           <span className="font-semibold">Gati</span> <span className="text-muted">Know what's next.</span>
         </p>
-        <p className="text-muted">An independent, student-built utility for IIT Gandhinagar. It is not an official app and is not endorsed by the institute. Bus times are scheduled departures, not live tracking.</p>
+        <MadeWith className="text-muted" />
+        <CoffeeButton align="start" />
+        <p className="text-[12px] text-muted">Not an official IIT Gandhinagar app. Bus times are scheduled departures, not live tracking.</p>
         <Button variant="quiet" size="sm" className="-ml-3" onClick={() => reset()}>
           Reset preferences
         </Button>

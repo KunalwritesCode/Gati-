@@ -8,6 +8,7 @@ import { formatDateShort, formatMinutes, formatStamp } from './lib/format';
 import { zoned } from './lib/time';
 import { BottomNav, SideNav } from './components/Nav';
 import { Banner } from './components/ui';
+import { CoffeeButton, MadeWith } from './components/Support';
 import { Home } from './screens/Home';
 import { Bus, RouteDetail } from './screens/Bus';
 import { Mess } from './screens/Mess';
@@ -61,7 +62,12 @@ function Shell() {
             <StatusBanners now={now} />
           </div>
           {screen}
-          {p === '/' && <p className="mt-10 text-center text-[12px] leading-relaxed text-muted lg:hidden">Gati is an independent student-built utility, not an official IIT Gandhinagar app.<br />Bus times are scheduled departures, not live tracking.</p>}
+          {p === '/' && (
+            <footer className="mt-10 flex flex-col items-center gap-3 text-center lg:hidden">
+              <CoffeeButton />
+              <MadeWith />
+            </footer>
+          )}
         </div>
       </main>
       <BottomNav current={p} />
