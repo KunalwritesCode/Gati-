@@ -1,0 +1,33 @@
+{
+  "name": "gati",
+  "version": "1.0.0",
+  "description": "Gati — Know what's next. Campus bus and mess utility for IIT Gandhinagar students.",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate && tsc --noEmit -p . && vite build && node scripts/postbuild.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p .",
+    "data:build": "python3 scripts/build_data.py sources/Mess_Menu_November2026.csv",
+    "validate": "node scripts/validate-data.mjs"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "lucide-react": "^1.66.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21",
+    "vitest": "^2.1.9"
+  },
+  "private": true
+}
