@@ -1,7 +1,7 @@
 {
   "name": "Gati — Know what's next",
   "short_name": "Gati",
-  "description": "Next college bus and next mess meal at IIT Gandhinagar, at a glance. An independent student-built utility.",
+  "description": "Next college bus and next mess meal at IIT Gandhinagar, at a glance.",
   "id": "./",
   "start_url": "./#/",
   "scope": "./",

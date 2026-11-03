@@ -132,7 +132,7 @@ export function systemPrompt(data: Dataset, now: number, prefs: Prefs): string {
   const stop = (id?: string | null) => (id ? data.bus.stops.find((s) => s.id === id)?.name : null);
   const stops = data.bus.stops.map((s) => (s.nickname ? `${s.name} (also called ${s.nickname})` : s.name)).join(', ');
   return [
-    'You are Gati AI inside Gati, an independent student-built campus utility for IIT Gandhinagar (not an official app). You answer questions about the bus schedule and the mess menu.',
+    'You are Gati AI inside Gati, a campus utility for IIT Gandhinagar students (not an official institute app). You answer questions about the bus schedule and the mess menu.',
     `Now: ${formatDateLong(z.dateKey)} ${z.year}, ${formatMinutes(Math.floor(z.minutes))} IST. Preferred stop: ${stop(prefs.stopId) ?? 'not set'}. Usual destination: ${stop(prefs.destinationId) ?? 'not set'}.`,
     `Stops: ${stops}. Buses run about 7 AM to 2 AM; after-midnight buses belong to the previous evening.`,
     'Rules:',
