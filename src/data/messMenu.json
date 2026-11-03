@@ -1,0 +1,2733 @@
+{
+  "schemaVersion": 1,
+  "menuId": "iitgn-mess-2026-11",
+  "dataVersion": "2026.11.1",
+  "title": "Mess Menu · November 2026",
+  "timezone": "Asia/Kolkata",
+  "validFrom": "2026-11-01",
+  "validTo": "2026-11-30",
+  "cycle": "weekly",
+  "meals": [
+    {
+      "id": "breakfast",
+      "name": "Breakfast",
+      "start": "07:45",
+      "end": "10:00",
+      "sourceLabel": "Breakfast - 7:45 am to 10:00 am"
+    },
+    {
+      "id": "lunch",
+      "name": "Lunch",
+      "start": "12:15",
+      "end": "14:15",
+      "sourceLabel": "Lunch - 12:15 pm - 2:15 pm"
+    },
+    {
+      "id": "snacks",
+      "name": "Snacks",
+      "start": "16:30",
+      "end": "17:45",
+      "sourceLabel": "Snacks - 04.30 pm - 05.45 pm"
+    },
+    {
+      "id": "dinner",
+      "name": "Dinner",
+      "start": "19:30",
+      "end": "21:30",
+      "sourceLabel": "Dinner - 7:30 pm - 9:30 pm"
+    }
+  ],
+  "days": {
+    "monday": {
+      "breakfast": [
+        {
+          "categoryId": "main",
+          "category": "Main",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Thepla",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Thepla"
+        },
+        {
+          "categoryId": "side",
+          "category": "Side",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Curd",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Curd"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Garlic Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Garlic Pickle"
+        },
+        {
+          "categoryId": "egg",
+          "category": "Egg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Egg Bhurji",
+              "diet": "egg"
+            }
+          ],
+          "raw": "Egg Bhurji"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread, butter & jam",
+          "highlight": false,
+          "options": [
+            {
+              "name": "White Bread + Butter + Jam",
+              "diet": "veg"
+            }
+          ],
+          "raw": "White Bread +Butter+Jam"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Milk + Elaichi Tea + Coffee",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Milk + Elaichi Tea+ Coffee"
+        },
+        {
+          "categoryId": "cereal",
+          "category": "Cereal",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Oats",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Oats"
+        },
+        {
+          "categoryId": "milk-mix",
+          "category": "Milk mix",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Bournvita",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Bournvita"
+        },
+        {
+          "categoryId": "fruit",
+          "category": "Fruit",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Orange",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Orange"
+        }
+      ],
+      "lunch": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "3-bean Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "3-bean Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Rasam",
+              "diet": "veg"
+            },
+            {
+              "name": "Sambhar",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Rasam/Sambhar"
+        },
+        {
+          "categoryId": "legume",
+          "category": "Legume curry",
+          "highlight": true,
+          "options": [
+            {
+              "name": "White Matar Masala",
+              "diet": "veg"
+            }
+          ],
+          "raw": "white matar masala"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Aloo Giloda Fry",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Aloo Giloda Fry"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Plain Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Plain rice"
+        },
+        {
+          "categoryId": "dairy",
+          "category": "Dairy",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Curd",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Curd"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon, Chili Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon, Chili Pickle"
+        },
+        {
+          "categoryId": "papad",
+          "category": "Papad & fryums",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Ramakada",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Ramakada"
+        }
+      ],
+      "snacks": [
+        {
+          "categoryId": "snack",
+          "category": "Snack",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Samosa",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Samosa"
+        },
+        {
+          "categoryId": "dip",
+          "category": "Dip & chutney",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Green Chutney + Imli Chutney",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Green Chutney + Imli Chutney"
+        },
+        {
+          "categoryId": "cold-bev",
+          "category": "Cold beverage",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Lemonade",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemonade"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Tea + Milk + Coffee + Haldi",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Tea + Milk+ Coffee + Haldi"
+        }
+      ],
+      "dinner": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Cucumber Tomato Onion Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Cucumber Tomato Onion Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Tomato Dal",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Tomato Dal"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Gobi Masala",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Gobi Masala"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Plain Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Plain Rice"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon + Garlic Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon + Garlic Pickle"
+        },
+        {
+          "categoryId": "special",
+          "category": "Special",
+          "highlight": true,
+          "options": [
+            {
+              "name": "ChocoChip Icecream",
+              "diet": "veg"
+            },
+            {
+              "name": "Almond Carnival Icecream",
+              "diet": "veg"
+            }
+          ],
+          "raw": "ChocoChip Icecream/Almond carnival Icecream"
+        },
+        {
+          "categoryId": "nonveg",
+          "category": "Non-veg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chicken Sukka",
+              "diet": "nonveg"
+            }
+          ],
+          "raw": "Chicken Sukka"
+        }
+      ]
+    },
+    "tuesday": {
+      "breakfast": [
+        {
+          "categoryId": "main",
+          "category": "Main",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Upma",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Upma"
+        },
+        {
+          "categoryId": "side",
+          "category": "Side",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Peanut Chutney",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Peanut Chuteny"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon"
+        },
+        {
+          "categoryId": "sprouts",
+          "category": "Sprouts",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Soaked Peanuts",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Soaked Peanuts"
+        },
+        {
+          "categoryId": "egg",
+          "category": "Egg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Boiled Eggs + Masala",
+              "diet": "egg"
+            }
+          ],
+          "raw": "Boiled eggs + Masala"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread, butter & jam",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Brown Bread + Butter + Jam",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Brown Bread+Butter+Jam"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Milk + Tea + Coffee",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Milk+Tea+Coffee"
+        },
+        {
+          "categoryId": "cereal",
+          "category": "Cereal",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Cornflakes",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Cornflakes"
+        },
+        {
+          "categoryId": "milk-mix",
+          "category": "Milk mix",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Chocolate Powder",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chocolate Powder"
+        },
+        {
+          "categoryId": "fruit",
+          "category": "Fruit",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Guava",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Guava"
+        }
+      ],
+      "lunch": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Carrot Radish Beetroot Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Carrot Raddish Beetroot Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Dal Palak",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dal Palak"
+        },
+        {
+          "categoryId": "legume",
+          "category": "Legume curry",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Soya Chunks Curry",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Soya Chunks Curry"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Lauki Chana Dry",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lauki Chana Dry"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Jeera Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Jeera Rice"
+        },
+        {
+          "categoryId": "dairy",
+          "category": "Dairy",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Butter Milk",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Butter milk"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Mirchi, Lemon, Garlic Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mirchi , Lemon , Garlic Pickle"
+        },
+        {
+          "categoryId": "papad",
+          "category": "Papad & fryums",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Rice Papad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Rice Papad"
+        }
+      ],
+      "snacks": [
+        {
+          "categoryId": "snack",
+          "category": "Snack",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Masala Vegetable Maggi",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Masala Vegetable Maggie"
+        },
+        {
+          "categoryId": "dip",
+          "category": "Dip & chutney",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Ketchup",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Ketchup"
+        },
+        {
+          "categoryId": "cold-bev",
+          "category": "Cold beverage",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Hot Chocolate",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Hot chocolate"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Tea",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Tea"
+        }
+      ],
+      "dinner": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Beetroot Cucumber Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Beetroot Cucumber Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Dal Fry",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dal Fry"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Dhaabe wala Paneer",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dhaabe wala Paneer"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Bagara Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Bagara Rice"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Multigrain Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mutigrain Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon + Chilli Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon + Chilli Pickle"
+        },
+        {
+          "categoryId": "special",
+          "category": "Special",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Veg Manchurian",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Veg Manchurian"
+        },
+        {
+          "categoryId": "nonveg",
+          "category": "Non-veg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Fish Curry",
+              "diet": "nonveg"
+            }
+          ],
+          "raw": "Fish Curry"
+        }
+      ]
+    },
+    "wednesday": {
+      "breakfast": [
+        {
+          "categoryId": "main",
+          "category": "Main",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Aloo Pyaz Paratha",
+              "diet": "veg"
+            },
+            {
+              "name": "Mix-Veg Paratha",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Aloo pyaz Paratha/Mix-Veg Paratha"
+        },
+        {
+          "categoryId": "side",
+          "category": "Side",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Schezwan Chutney + Curd",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Schezwan Chutney+Curd"
+        },
+        {
+          "categoryId": "egg",
+          "category": "Egg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Egg Bhurji",
+              "diet": "egg"
+            }
+          ],
+          "raw": "Egg Bhurjee"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread, butter & jam",
+          "highlight": false,
+          "options": [
+            {
+              "name": "White Bread + Butter + Jam",
+              "diet": "veg"
+            }
+          ],
+          "raw": "White Bread+Butter+Jam"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Milk + Ginger Tea + Coffee",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Milk+Ginger Tea+Coffee"
+        },
+        {
+          "categoryId": "cereal",
+          "category": "Cereal",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Chocos",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chocos"
+        },
+        {
+          "categoryId": "milk-mix",
+          "category": "Milk mix",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Boost",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Boost"
+        },
+        {
+          "categoryId": "fruit",
+          "category": "Fruit",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Banana",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Banana"
+        }
+      ],
+      "lunch": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "3 Bean Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "3 Bean Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Masoor Dal",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Masoor Dal"
+        },
+        {
+          "categoryId": "legume",
+          "category": "Legume curry",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Kala Chana Masala (Semi-gravy)",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Kala Chana Masala (Semi-gravy)"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Dahi Bhindi",
+              "diet": "veg"
+            },
+            {
+              "name": "Bhindi Fry",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dahi Bhindi/ Bhindi Fry"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Plain Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Plain Rice"
+        },
+        {
+          "categoryId": "dairy",
+          "category": "Dairy",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Plain Curd",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Plain Curd"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Mirchi, Lemon, Chilli Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mirchi , Lemon , Chilli Pickle"
+        },
+        {
+          "categoryId": "papad",
+          "category": "Papad & fryums",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Fryums",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Fryums"
+        }
+      ],
+      "snacks": [
+        {
+          "categoryId": "snack",
+          "category": "Snack",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chilli Soya",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chilli Soya"
+        },
+        {
+          "categoryId": "dip",
+          "category": "Dip & chutney",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Ketchup",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Ketchup"
+        },
+        {
+          "categoryId": "cold-bev",
+          "category": "Cold beverage",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Shikanji",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Shikanji"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Adrak-Elaichi Chai + Coffee + Milk",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Adrak-Elaichi Chai + Coffee +Milk"
+        }
+      ],
+      "dinner": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Beetroot Cabbage Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Beetroot Cabbage Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Gujarati Kadhi",
+              "diet": "veg"
+            },
+            {
+              "name": "Sambar + Peanut Chutney",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Gujarati Kadhi/ Sambar+Peanut Chutney"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Aloo Tamatar Rasawala",
+              "diet": "veg"
+            },
+            {
+              "name": "Medu Vada",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Aloo Tamatar Rasawala/ Medu vada"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Khichdi",
+              "diet": "veg"
+            },
+            {
+              "name": "Lemon Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Khichdi/ Lemon Rice"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Puri",
+              "diet": "veg"
+            },
+            {
+              "name": "Ragi Dosa",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Puri/ Ragi Dosa"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon + Garlic Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon + Garlic Pickle"
+        },
+        {
+          "categoryId": "special",
+          "category": "Special",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Lyangcha",
+              "diet": "veg"
+            },
+            {
+              "name": "Sweet Pongal",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lyangcha/ Sweet Pongal"
+        },
+        {
+          "categoryId": "nonveg",
+          "category": "Non-veg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chicken Biryani",
+              "diet": "nonveg"
+            }
+          ],
+          "raw": "Chicken Biryani"
+        }
+      ]
+    },
+    "thursday": {
+      "breakfast": [
+        {
+          "categoryId": "main",
+          "category": "Main",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Vermicelli",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Vermicelli"
+        },
+        {
+          "categoryId": "side",
+          "category": "Side",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Green Chutney",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Green Chutney"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Pickle"
+        },
+        {
+          "categoryId": "egg",
+          "category": "Egg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Omelette",
+              "diet": "egg"
+            }
+          ],
+          "raw": "Omlette"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread, butter & jam",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Brown Bread Butter + Jam",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Brown Bread Butter + Jam"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Milk + Adrak Tea + Coffee",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Milk+Adrak Tea+Coffee"
+        },
+        {
+          "categoryId": "cereal",
+          "category": "Cereal",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Oats",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Oats"
+        },
+        {
+          "categoryId": "milk-mix",
+          "category": "Milk mix",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Chocolate Powder",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chocolate Powder"
+        },
+        {
+          "categoryId": "fruit",
+          "category": "Fruit",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Watermelon",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Watermelon"
+        }
+      ],
+      "lunch": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Onion + Cucumber Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Onion+ Cucumber Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Dal Tadka",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dal Tadka"
+        },
+        {
+          "categoryId": "legume",
+          "category": "Legume curry",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Mix Kathod",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mix Kathod"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Paneer Butter Masala",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Paneer Butter Masala"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Jeera Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Jeera Rice"
+        },
+        {
+          "categoryId": "dairy",
+          "category": "Dairy",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Masala Buttermilk",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Masala Buttermilk"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Mirchi, Lemon, Garlic Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mirchi , Lemon , Garlic Pickle"
+        },
+        {
+          "categoryId": "papad",
+          "category": "Papad & fryums",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Roasted Papad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Roasted Papad"
+        }
+      ],
+      "snacks": [
+        {
+          "categoryId": "snack",
+          "category": "Snack",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Mix Pakoda",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mix Pakoda"
+        },
+        {
+          "categoryId": "dip",
+          "category": "Dip & chutney",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Ketchup",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Ketchup"
+        },
+        {
+          "categoryId": "cold-bev",
+          "category": "Cold beverage",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Banana Milkshake",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Banana Milkshake"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Elaichi Chai",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Elaichi Chai"
+        }
+      ],
+      "dinner": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Mix Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mix Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Dal Palak",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dal Palak"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Methi Matar Malai",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Methi Matar Malai"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Veg Biryani",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Veg biryani"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon + Garlic Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon + Garlic Pickle"
+        },
+        {
+          "categoryId": "special",
+          "category": "Special",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Sev Boondi",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Sev Boondi"
+        },
+        {
+          "categoryId": "nonveg",
+          "category": "Non-veg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Thai Chicken Curry",
+              "diet": "nonveg"
+            },
+            {
+              "name": "Chettinad Chicken",
+              "diet": "nonveg"
+            }
+          ],
+          "raw": "Thai Chicken Curry/ Chettinad Chicken"
+        }
+      ]
+    },
+    "friday": {
+      "breakfast": [
+        {
+          "categoryId": "main",
+          "category": "Main",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Onion Tomato Uttapam",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Onion Tomato Uttapam"
+        },
+        {
+          "categoryId": "side",
+          "category": "Side",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Sambhar + Peanut Chutney",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Sambhar+ Peanut Chuteny"
+        },
+        {
+          "categoryId": "sprouts",
+          "category": "Sprouts",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Moong Sprouts",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Moong Sprouts"
+        },
+        {
+          "categoryId": "egg",
+          "category": "Egg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Boiled Eggs + Masala",
+              "diet": "egg"
+            }
+          ],
+          "raw": "Boiled eggs + Masala"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread, butter & jam",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Brown Bread Butter + Jam",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Brown Bread Butter + Jam"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Milk + Adrak Tea + Coffee",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Milk +Adrak Tea+ Coffee"
+        },
+        {
+          "categoryId": "cereal",
+          "category": "Cereal",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Chocos",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chocos"
+        },
+        {
+          "categoryId": "milk-mix",
+          "category": "Milk mix",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Boost",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Boost"
+        },
+        {
+          "categoryId": "fruit",
+          "category": "Fruit",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Papaya",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Papaya"
+        }
+      ],
+      "lunch": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Corn Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Corn Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Dal Makhani",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dal Makhani"
+        },
+        {
+          "categoryId": "legume",
+          "category": "Legume curry",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Punjabi Kadhi Pakoda",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Punjabi Kadhi Pakoda"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Baingan Masala",
+              "diet": "veg"
+            },
+            {
+              "name": "Baingan Bharta",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Baingan Masala/ Baingan Bharta"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Plain Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Plain Rice"
+        },
+        {
+          "categoryId": "dairy",
+          "category": "Dairy",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Plain Curd",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Plain Curd"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Multigrain Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Multigrain Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Mirchi, Lemon, Mix Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mirchi , Lemon , Mix Pickle"
+        },
+        {
+          "categoryId": "papad",
+          "category": "Papad & fryums",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Rice Papad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Rice Papad"
+        }
+      ],
+      "snacks": [
+        {
+          "categoryId": "snack",
+          "category": "Snack",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Bombay Bhel",
+              "diet": "veg"
+            },
+            {
+              "name": "Chinese Bhel",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Bombay Bhel/ Chinese Bhel"
+        },
+        {
+          "categoryId": "dip",
+          "category": "Dip & chutney",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Green Chutney + Imli Chutney",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Green Chutney + Imli Chutney"
+        },
+        {
+          "categoryId": "cold-bev",
+          "category": "Cold beverage",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Litchi Crush",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Litchi Crush"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Adrak-Elaichi Chai + Coffee + Milk",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Adrak-Elaichi Chai + Coffee +Milk"
+        }
+      ],
+      "dinner": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Cucumber Tomato Onion Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Cucumber Tomato Onion Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Dal Dhokli",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dal Dhokli"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Sev Tamatar",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Sev Tamatar"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Jeera Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Jeera Rice"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon + Mix Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon + Mix Pickle"
+        },
+        {
+          "categoryId": "special",
+          "category": "Special",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Fruit Custard",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Fruit Custard"
+        },
+        {
+          "categoryId": "nonveg",
+          "category": "Non-veg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chicken Fried Rice",
+              "diet": "nonveg"
+            }
+          ],
+          "raw": "Chicken Fried Rice"
+        }
+      ]
+    },
+    "saturday": {
+      "breakfast": [
+        {
+          "categoryId": "main",
+          "category": "Main",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Batata Poha",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Batata Poha"
+        },
+        {
+          "categoryId": "side",
+          "category": "Side",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Onions + Sev",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Onions + Sev"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon"
+        },
+        {
+          "categoryId": "egg",
+          "category": "Egg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Omelette",
+              "diet": "egg"
+            }
+          ],
+          "raw": "Omlette"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread, butter & jam",
+          "highlight": false,
+          "options": [
+            {
+              "name": "White Bread + Butter + Jam",
+              "diet": "veg"
+            }
+          ],
+          "raw": "White Bread +Butter+Jam"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Milk + Tea + Coffee",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Milk+Tea+Coffee"
+        },
+        {
+          "categoryId": "cereal",
+          "category": "Cereal",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Cornflakes",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Cornflakes"
+        },
+        {
+          "categoryId": "milk-mix",
+          "category": "Milk mix",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Bournvita",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Bournvita"
+        },
+        {
+          "categoryId": "fruit",
+          "category": "Fruit",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Guava",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Guava"
+        }
+      ],
+      "lunch": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Mixed Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mixed Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Tomato Dal",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Tomato Dal"
+        },
+        {
+          "categoryId": "legume",
+          "category": "Legume curry",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Amritsari Chole",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Amritsari Chole"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Lasanya Batata",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lasanya Batata"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Jeera Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Jeera Rice"
+        },
+        {
+          "categoryId": "dairy",
+          "category": "Dairy",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Dry Fruit Lassi",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dry Fruit Lassi"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Bhature",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Bhature"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon + Mix Pickle + Mint Chutney",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon + Mix Pickle + Mint Chutney"
+        },
+        {
+          "categoryId": "papad",
+          "category": "Papad & fryums",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Fryums",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Fryums"
+        }
+      ],
+      "snacks": [
+        {
+          "categoryId": "snack",
+          "category": "Snack",
+          "highlight": true,
+          "options": [
+            {
+              "name": "White Sauce Pasta",
+              "diet": "veg"
+            }
+          ],
+          "raw": "White Sauce pasta"
+        },
+        {
+          "categoryId": "dip",
+          "category": "Dip & chutney",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Ketchup",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Ketchup"
+        },
+        {
+          "categoryId": "cold-bev",
+          "category": "Cold beverage",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Green Apple Crush",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Green Apple crush"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Tea + Milk + Coffee + Haldi",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Tea + Milk+ Coffee + Haldi"
+        }
+      ],
+      "dinner": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Cucumber Radish Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Cucumber Raddish Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Dal Tadka",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Dal tadka"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Kadhai Paneer",
+              "diet": "veg"
+            },
+            {
+              "name": "Egg Curry",
+              "diet": "egg"
+            }
+          ],
+          "raw": "Kadhai Paneer \\ Egg Curry"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Jeera Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Jeera Rice"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Multigrain Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mutigrain Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon + Mix Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon + Mix Pickle"
+        },
+        {
+          "categoryId": "special",
+          "category": "Special",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Malpua",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Malpua"
+        }
+      ]
+    },
+    "sunday": {
+      "breakfast": [
+        {
+          "categoryId": "main",
+          "category": "Main",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Schezwan Butter Dosa",
+              "diet": "veg"
+            },
+            {
+              "name": "Onion Dosa",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Schezwan Butter Dosa/ Onion Dosa"
+        },
+        {
+          "categoryId": "side",
+          "category": "Side",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Sambar + Peanut Chutney",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Sambar+Peanut Chutney"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Pickle"
+        },
+        {
+          "categoryId": "sprouts",
+          "category": "Sprouts",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Moong Sprouts",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Moong Sprouts"
+        },
+        {
+          "categoryId": "egg",
+          "category": "Egg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Boiled Eggs + Masala",
+              "diet": "egg"
+            }
+          ],
+          "raw": "Boiled eggs + Masala"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread, butter & jam",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Brown Bread + Butter + Jam",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Brown Bread+Butter+Jam"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Milk + Adrak Tea + Coffee",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Milk+Adrak Tea+Coffee"
+        },
+        {
+          "categoryId": "cereal",
+          "category": "Cereal",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Chocos",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chocos"
+        },
+        {
+          "categoryId": "milk-mix",
+          "category": "Milk mix",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Boost",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Boost"
+        },
+        {
+          "categoryId": "fruit",
+          "category": "Fruit",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Banana",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Banana"
+        }
+      ],
+      "lunch": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Cucumber Carrot Beetroot Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Cucumber Carrot Beetroot Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Arhar Dal",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Arhar Dal"
+        },
+        {
+          "categoryId": "legume",
+          "category": "Legume curry",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Rajma Masala",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Rajma Masala"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Veg Korma",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Veg.Korma"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Pudina Rice",
+              "diet": "veg"
+            },
+            {
+              "name": "Tomato Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Pudina Rice/ Tomato Rice"
+        },
+        {
+          "categoryId": "dairy",
+          "category": "Dairy",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Veg Raita",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Veg Raita"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Mirchi + Lemon + Garlic Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Mirchi + Lemon + Garlic Pickle"
+        },
+        {
+          "categoryId": "papad",
+          "category": "Papad & fryums",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Ramakada",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Ramakada"
+        }
+      ],
+      "snacks": [
+        {
+          "categoryId": "snack",
+          "category": "Snack",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Pani Puri",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Pani Puri"
+        },
+        {
+          "categoryId": "dip",
+          "category": "Dip & chutney",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Onion, Chat Masala, Sev + Aloo",
+              "diet": "veg"
+            },
+            {
+              "name": "Onion, Chat Masala, Sev + Ragda",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Onion, Chat Masala, Sev+ Aloo/Onion, Chat Masala, Sev+Ragda"
+        },
+        {
+          "categoryId": "cold-bev",
+          "category": "Cold beverage",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Jaljeera",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Jaljeera"
+        },
+        {
+          "categoryId": "hot-bev",
+          "category": "Hot beverage",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Adrak-Elaichi Chai + Coffee + Milk",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Adrak-Elaichi Chai + Coffee +Milk"
+        }
+      ],
+      "dinner": [
+        {
+          "categoryId": "salad",
+          "category": "Salad",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Onion Tomato Salad",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Onion Tomato Salad"
+        },
+        {
+          "categoryId": "dal",
+          "category": "Dal",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Arhar Dal",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Arhar Dal"
+        },
+        {
+          "categoryId": "veg",
+          "category": "Vegetable",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Kashmiri Dum Aloo",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Kashmiri Dum Aloo"
+        },
+        {
+          "categoryId": "rice",
+          "category": "Rice",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Plain Rice",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Plain Rice"
+        },
+        {
+          "categoryId": "bread",
+          "category": "Bread",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chapati",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Chapati"
+        },
+        {
+          "categoryId": "pickle",
+          "category": "Pickle & lemon",
+          "highlight": false,
+          "options": [
+            {
+              "name": "Lemon + Chilli Pickle",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lemon + Chilli Pickle"
+        },
+        {
+          "categoryId": "special",
+          "category": "Special",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Lauki ka Halwa",
+              "diet": "veg"
+            }
+          ],
+          "raw": "Lauki ka halwa"
+        },
+        {
+          "categoryId": "nonveg",
+          "category": "Non-veg",
+          "highlight": true,
+          "options": [
+            {
+              "name": "Chicken Biryani",
+              "diet": "nonveg"
+            }
+          ],
+          "raw": "Chicken Biryani"
+        }
+      ]
+    }
+  },
+  "messes": [
+    "Mohani",
+    "Jaiswal",
+    "Rgouras",
+    "Bhopal"
+  ],
+  "feedback": {
+    "note": "For suggestions and complaints, fill the complaint form or email the Mess Secretary.",
+    "emails": [
+      {
+        "role": "Mess Secretary",
+        "email": "mess.secy@iitgn.ac.in"
+      },
+      {
+        "role": "Welfare Secretary",
+        "email": "welfare.secretary@iitgn.ac.in"
+      }
+    ],
+    "forms": [
+      {
+        "mess": "Bhopal",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSe14dvwv6ulxYOIKY_o074DRqc0Q3YnjcNf-6NRKOgG9przQw/viewform"
+      },
+      {
+        "mess": "Jaiswal",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfcTE3RaSzwrx7B2lqoyULTOJP5iC7jKSPdss-hZVeiV84zJw/viewform"
+      },
+      {
+        "mess": "Mohani",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeCLjKjfsgu7FWiGZ0nqoPQX710oH98ENJ43MqjYf5cib1fXA/viewform"
+      },
+      {
+        "mess": "Rgouras",
+        "url": "https://docs.google.com/forms/d/1V5-3xvFkZlNdOvqdDO-X9IFBmLK3zRmQguWcRGzsvbY/viewform"
+      }
+    ]
+  }
+}

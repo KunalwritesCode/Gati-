@@ -1,0 +1,1247 @@
+{
+  "schemaVersion": 1,
+  "timetableId": "iitgn-bus-2026-11",
+  "dataVersion": "2026.11.1",
+  "timezone": "Asia/Kolkata",
+  "timeFormat": "HH:MM, 24-hour. Values ≥ 24:00 belong to the previous service day (e.g. 24:30 = 12:30 AM).",
+  "stops": [
+    {
+      "id": "jrha",
+      "name": "JRHA",
+      "nickname": "Jeet Royal",
+      "aliases": [
+        "jhra",
+        "j r h a",
+        "jeet royal",
+        "jeet"
+      ],
+      "area": "campus",
+      "timed": true
+    },
+    {
+      "id": "gate1",
+      "name": "Gate 1",
+      "aliases": [
+        "gate-1",
+        "gate one",
+        "main gate 1"
+      ],
+      "area": "campus",
+      "timed": false
+    },
+    {
+      "id": "rpc",
+      "name": "Research Park Circle",
+      "aliases": [
+        "research park",
+        "rp circle",
+        "rpc"
+      ],
+      "area": "campus",
+      "timed": false
+    },
+    {
+      "id": "ucorridor",
+      "name": "U Corridor",
+      "aliases": [
+        "u corridor circle",
+        "u-corridor",
+        "ucorridor",
+        "uc"
+      ],
+      "area": "campus",
+      "timed": true
+    },
+    {
+      "id": "ab1",
+      "name": "AB1 Parking",
+      "aliases": [
+        "ab1",
+        "ab 1",
+        "academic block 1",
+        "academic block"
+      ],
+      "area": "campus",
+      "timed": false
+    },
+    {
+      "id": "mess",
+      "name": "Mess Parking",
+      "aliases": [
+        "mess",
+        "iitgn mess parking",
+        "mess parking"
+      ],
+      "area": "campus",
+      "timed": true
+    },
+    {
+      "id": "rakshashakti",
+      "name": "Rakshashakti Circle",
+      "aliases": [
+        "raksha shakti",
+        "rakshashakti"
+      ],
+      "area": "city",
+      "timed": false
+    },
+    {
+      "id": "kudasan",
+      "name": "Kudasan",
+      "aliases": [
+        "kudasan"
+      ],
+      "area": "city",
+      "timed": true
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "B1",
+      "name": "Bus 1",
+      "operator": "IITGN Welfare Council",
+      "type": "Non-AC",
+      "operatingHours": {
+        "start": "07:15",
+        "end": "23:15"
+      },
+      "seatsNote": "56-seater from 7:15 to 10:45 AM, 29-seater after that"
+    },
+    {
+      "id": "B2",
+      "name": "Bus 2",
+      "operator": "IITGN Welfare Council",
+      "type": "Non-AC",
+      "operatingHours": {
+        "start": "09:30",
+        "end": "26:00"
+      },
+      "seatsNote": "29-seater"
+    },
+    {
+      "id": "INST56",
+      "name": "Institute bus (56-seater)",
+      "operator": "IIT Gandhinagar",
+      "type": null,
+      "operatingHours": null,
+      "seatsNote": "56-seater"
+    },
+    {
+      "id": "INST29",
+      "name": "Institute bus (29-seater)",
+      "operator": "IIT Gandhinagar",
+      "type": null,
+      "operatingHours": null,
+      "seatsNote": "29-seater"
+    }
+  ],
+  "routes": [
+    {
+      "id": "campus-jrha-uc",
+      "name": "Campus shuttle",
+      "shortName": "JRHA → U Corridor",
+      "kind": "campus",
+      "stops": [
+        "jrha",
+        "gate1",
+        "rpc",
+        "ucorridor"
+      ],
+      "note": "Regular route. No other stops allowed."
+    },
+    {
+      "id": "campus-uc-jrha",
+      "name": "Campus shuttle",
+      "shortName": "U Corridor → JRHA",
+      "kind": "campus",
+      "stops": [
+        "ucorridor",
+        "rpc",
+        "gate1",
+        "jrha"
+      ],
+      "note": "Regular route. No other stops allowed."
+    },
+    {
+      "id": "campus-loop",
+      "name": "Morning loop ★",
+      "shortName": "JRHA loop via AB1 & Mess",
+      "kind": "campus",
+      "stops": [
+        "jrha",
+        "gate1",
+        "rpc",
+        "ab1",
+        "mess",
+        "ucorridor",
+        "rpc",
+        "gate1",
+        "jrha"
+      ],
+      "note": "★ trips only. Round trip that starts and ends at JRHA."
+    },
+    {
+      "id": "kudasan-out",
+      "name": "Institute bus",
+      "shortName": "Campus → Kudasan",
+      "kind": "city",
+      "stops": [
+        "mess",
+        "rakshashakti",
+        "kudasan"
+      ],
+      "note": "Listed as 'From IITGn' in the institute schedule."
+    },
+    {
+      "id": "kudasan-in",
+      "name": "Institute bus",
+      "shortName": "Kudasan → Campus",
+      "kind": "city",
+      "stops": [
+        "kudasan",
+        "rakshashakti",
+        "mess"
+      ],
+      "note": "Listed as 'To IITGn' in the institute schedule; time read as departure from Kudasan."
+    }
+  ],
+  "calendars": [
+    {
+      "id": "daily",
+      "name": "Every day",
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "assumed": true,
+      "note": "Operating days are not stated in the source sheets. Confirm with the Welfare Council on holidays."
+    }
+  ],
+  "trips": [
+    {
+      "id": "INST29-from-0700",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST29",
+      "departure": "07:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-0715",
+      "routeId": "campus-loop",
+      "vehicleId": "B1",
+      "departure": "07:15",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus1"
+    },
+    {
+      "id": "INST29-to-0730",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST29",
+      "departure": "07:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-0745",
+      "routeId": "campus-loop",
+      "vehicleId": "B1",
+      "departure": "07:45",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-0815",
+      "routeId": "campus-loop",
+      "vehicleId": "B1",
+      "departure": "08:15",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus1"
+    },
+    {
+      "id": "INST29-from-0830",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST29",
+      "departure": "08:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-0845",
+      "routeId": "campus-loop",
+      "vehicleId": "B1",
+      "departure": "08:45",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus1"
+    },
+    {
+      "id": "INST29-to-0900",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST29",
+      "departure": "09:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-0915",
+      "routeId": "campus-loop",
+      "vehicleId": "B1",
+      "departure": "09:15",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-0930",
+      "routeId": "campus-loop",
+      "vehicleId": "B2",
+      "departure": "09:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus2"
+    },
+    {
+      "id": "INST29-from-0930",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST29",
+      "departure": "09:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-0945",
+      "routeId": "campus-loop",
+      "vehicleId": "B1",
+      "departure": "09:45",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-1000",
+      "routeId": "campus-loop",
+      "vehicleId": "B2",
+      "departure": "10:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus2"
+    },
+    {
+      "id": "INST29-to-1000",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST29",
+      "departure": "10:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-1015",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "10:15",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1030",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "10:30",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-1030",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "10:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus2"
+    },
+    {
+      "id": "B1-1045",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "10:45",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-1045",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "10:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1100",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "11:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1115",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "11:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1130",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "11:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1145",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "11:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1200",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "12:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Morning",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1215",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "12:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1230",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "12:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1245",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "12:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1300",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "13:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B1-1330",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "13:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1345",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "13:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1400",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "14:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1415",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "14:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1430",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "14:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1445",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "14:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1500",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "15:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1515",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "15:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1530",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "15:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1545",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "15:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-1545",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "15:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1600",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "16:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1615",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "16:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-1630",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "16:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST56-from-1630",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST56",
+      "departure": "16:30",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B2-1645",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "16:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B1-1700",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "17:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-1700",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "17:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST56-to-1700",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST56",
+      "departure": "17:00",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-1715",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "17:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1730",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "17:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1745",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "17:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "INST56-from-1745",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST56",
+      "departure": "17:45",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-1800",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "18:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-1815",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "18:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-1815",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "18:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST56-to-1815",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST56",
+      "departure": "18:15",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-1830",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "18:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-1830",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "18:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST29-from-1830",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST29",
+      "departure": "18:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-1845",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "18:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-1845",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "18:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST56-from-1845",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST56",
+      "departure": "18:45",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B2-1900",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "19:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST29-to-1900",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST29",
+      "departure": "19:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B2-1915",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "19:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST56-to-1915",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST56",
+      "departure": "19:15",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B2-1930",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "19:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST29-from-1930",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST29",
+      "departure": "19:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B2-1945",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "19:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST56-from-1945",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST56",
+      "departure": "19:45",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B2-2000",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "20:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Afternoon & Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST29-to-2000",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST29",
+      "departure": "20:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B2-2015",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "20:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST56-to-2015",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST56",
+      "departure": "20:15",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-2030",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "20:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-2030",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "20:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "INST29-from-2030",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST29",
+      "departure": "20:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-2045",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "20:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-2100",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "21:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-2115",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "21:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-2130",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "21:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "INST56-from-2130",
+      "routeId": "kudasan-out",
+      "vehicleId": "INST56",
+      "departure": "21:30",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-2145",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "21:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-2200",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "22:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-2215",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "22:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B1-2230",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "22:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "INST29-to-2230",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST29",
+      "departure": "22:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "INST56-to-2230",
+      "routeId": "kudasan-in",
+      "vehicleId": "INST56",
+      "departure": "22:30",
+      "seats": 56,
+      "calendarId": "daily",
+      "segment": null,
+      "source": "institute"
+    },
+    {
+      "id": "B1-2245",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B1",
+      "departure": "22:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-2245",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "22:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B1-2300",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B1",
+      "departure": "23:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus1"
+    },
+    {
+      "id": "B2-2300",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "23:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2315",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "23:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2330",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "23:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2345",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "23:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2400",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "24:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2415",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "24:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2430",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "24:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2445",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "24:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2500",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "25:00",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2515",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "25:15",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2530",
+      "routeId": "campus-jrha-uc",
+      "vehicleId": "B2",
+      "departure": "25:30",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    },
+    {
+      "id": "B2-2545",
+      "routeId": "campus-uc-jrha",
+      "vehicleId": "B2",
+      "departure": "25:45",
+      "seats": 29,
+      "calendarId": "daily",
+      "segment": "Late Evening",
+      "source": "bus2"
+    }
+  ]
+}

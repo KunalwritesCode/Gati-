@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026.11.1",
+  "generatedAt": "2026-11-03T07:01:53+00:00",
+  "timezone": "Asia/Kolkata",
+  "editions": {
+    "bus": {
+      "label": "Bus timetable · November 2026",
+      "effectiveFrom": "2026-11-01"
+    },
+    "mess": {
+      "label": "Mess menu · November 2026",
+      "validFrom": "2026-11-01",
+      "validTo": "2026-11-30"
+    }
+  },
+  "sources": [
+    {
+      "id": "combined",
+      "title": "Combined Bus Schedule",
+      "kind": "image",
+      "use": "Cross-check of every campus shuttle departure"
+    },
+    {
+      "id": "bus1",
+      "title": "Bus 1 Schedule · IITGN Welfare Council",
+      "kind": "image",
+      "use": "Primary source for Bus 1 trips"
+    },
+    {
+      "id": "bus2",
+      "title": "Bus 2 Schedule · IITGN Welfare Council",
+      "kind": "image",
+      "use": "Primary source for Bus 2 trips"
+    },
+    {
+      "id": "institute",
+      "title": "IIT Gandhinagar Institute Bus Schedule (Kudasan)",
+      "kind": "image",
+      "use": "Primary source for the Kudasan bus"
+    },
+    {
+      "id": "mess",
+      "title": "Mess_Menu_November2026 - Menu.csv",
+      "kind": "csv",
+      "use": "Weekly mess menu and serving times"
+    }
+  ],
+  "assumptions": [
+    "Buses run the same timetable every day; confirm on holidays.",
+    "Untimed stops show the terminal departure plus 'passes shortly after'.",
+    "'A / B' menu entries mean either dish is served.",
+    "Only complaint forms and official role emails are published; no personal phone numbers."
+  ],
+  "serviceExceptions": [],
+  "flags": [
+    {
+      "severity": "info",
+      "area": "bus",
+      "message": "Bus 1 sheet subtitle says '29-Seater Non-AC Bus' but its Morning column (7:15–10:45 AM) is a 56-seater. The combined sheet confirms the 56-seater window; Gati uses that."
+    },
+    {
+      "severity": "info",
+      "area": "bus",
+      "message": "Bus 2 sheet spells the stop 'JHRA' in its Late Evening column. Treated as JRHA."
+    },
+    {
+      "severity": "info",
+      "area": "bus",
+      "message": "The combined sheet header lists the regular route as U Corridor → Research Park Circle → Gate-1 → JRHA, the per-bus sheets as JRHA → Gate-1 → Research Park Circle → U Corridor. Gati reads these as the two directions of the same route."
+    },
+    {
+      "severity": "warning",
+      "area": "bus",
+      "message": "Times are published only at JRHA and U Corridor (and Mess Parking / Kudasan for the institute bus). Gate 1, Research Park Circle, AB1 Parking and Rakshashakti Circle have no times; Gati shows the terminal departure and says the bus passes shortly after. No times are estimated."
+    },
+    {
+      "severity": "warning",
+      "area": "bus",
+      "message": "Morning ★ trips are a loop from JRHA via AB1 Parking and Mess Parking to U Corridor and back to JRHA. There are no separate U Corridor departures before 10:30 AM; students at U Corridor in the morning board the ★ loop on its way back to JRHA."
+    },
+    {
+      "severity": "warning",
+      "area": "bus",
+      "message": "Institute (Kudasan) schedule 'To IITGn' times are read as departures from Kudasan. A 30-minute gap between 'From' and 'To' rows is too short for a full round trip, so they cannot be arrival times at campus."
+    },
+    {
+      "severity": "info",
+      "area": "bus",
+      "message": "Arrival times are not published for any route."
+    },
+    {
+      "severity": "warning",
+      "area": "bus",
+      "message": "Operating days are not stated on any bus sheet. Gati assumes the same timetable every day of the week and tells students to confirm on holidays."
+    },
+    {
+      "severity": "info",
+      "area": "mess",
+      "message": "Saturday dinner has no separate non-veg item (Egg Curry is offered as an alternative to Kadhai Paneer)."
+    },
+    {
+      "severity": "info",
+      "area": "mess",
+      "message": "Dishes written as 'A / B' in the menu are shown as 'A or B' (either one is served)."
+    },
+    {
+      "severity": "info",
+      "area": "mess",
+      "message": "The menu is a single weekly cycle titled November 2026. Gati applies it to every week from 1 to 30 November 2026 and shows no menu for dates outside that range."
+    },
+    {
+      "severity": "info",
+      "area": "mess",
+      "message": "The menu names four messes (Mohani, Jaiswal, Rgouras, Bhopal) but does not say whether menus differ between them. Gati shows one common menu."
+    },
+    {
+      "severity": "info",
+      "area": "mess",
+      "message": "Coordinator names and personal phone numbers in the sheet are intentionally not included in the app; only complaint forms and official role emails are."
+    }
+  ],
+  "normalizations": [
+    {
+      "from": "Adrak-Elaichi Chai + Coffee +Milk",
+      "to": "Adrak-Elaichi Chai + Coffee + Milk"
+    },
+    {
+      "from": "Almond carnival Icecream",
+      "to": "Almond Carnival Icecream"
+    },
+    {
+      "from": "Aloo pyaz Paratha",
+      "to": "Aloo Pyaz Paratha"
+    },
+    {
+      "from": "Boiled eggs + Masala",
+      "to": "Boiled Eggs + Masala"
+    },
+    {
+      "from": "Brown Bread+Butter+Jam",
+      "to": "Brown Bread + Butter + Jam"
+    },
+    {
+      "from": "Butter milk",
+      "to": "Butter Milk"
+    },
+    {
+      "from": "Carrot Raddish Beetroot Salad",
+      "to": "Carrot Radish Beetroot Salad"
+    },
+    {
+      "from": "Cucumber Raddish Salad",
+      "to": "Cucumber Radish Salad"
+    },
+    {
+      "from": "Dal tadka",
+      "to": "Dal Tadka"
+    },
+    {
+      "from": "Egg Bhurjee",
+      "to": "Egg Bhurji"
+    },
+    {
+      "from": "Green Apple crush",
+      "to": "Green Apple Crush"
+    },
+    {
+      "from": "Hot chocolate",
+      "to": "Hot Chocolate"
+    },
+    {
+      "from": "Lauki ka halwa",
+      "to": "Lauki ka Halwa"
+    },
+    {
+      "from": "Masala Vegetable Maggie",
+      "to": "Masala Vegetable Maggi"
+    },
+    {
+      "from": "Medu vada",
+      "to": "Medu Vada"
+    },
+    {
+      "from": "Milk + Elaichi Tea+ Coffee",
+      "to": "Milk + Elaichi Tea + Coffee"
+    },
+    {
+      "from": "Milk +Adrak Tea+ Coffee",
+      "to": "Milk + Adrak Tea + Coffee"
+    },
+    {
+      "from": "Milk+Adrak Tea+Coffee",
+      "to": "Milk + Adrak Tea + Coffee"
+    },
+    {
+      "from": "Milk+Ginger Tea+Coffee",
+      "to": "Milk + Ginger Tea + Coffee"
+    },
+    {
+      "from": "Milk+Tea+Coffee",
+      "to": "Milk + Tea + Coffee"
+    },
+    {
+      "from": "Mirchi , Lemon , Chilli Pickle",
+      "to": "Mirchi, Lemon, Chilli Pickle"
+    },
+    {
+      "from": "Mirchi , Lemon , Garlic Pickle",
+      "to": "Mirchi, Lemon, Garlic Pickle"
+    },
+    {
+      "from": "Mirchi , Lemon , Mix Pickle",
+      "to": "Mirchi, Lemon, Mix Pickle"
+    },
+    {
+      "from": "Mutigrain Chapati",
+      "to": "Multigrain Chapati"
+    },
+    {
+      "from": "Omlette",
+      "to": "Omelette"
+    },
+    {
+      "from": "Onion+ Cucumber Salad",
+      "to": "Onion + Cucumber Salad"
+    },
+    {
+      "from": "Onion, Chat Masala, Sev+ Aloo",
+      "to": "Onion, Chat Masala, Sev + Aloo"
+    },
+    {
+      "from": "Onion, Chat Masala, Sev+Ragda",
+      "to": "Onion, Chat Masala, Sev + Ragda"
+    },
+    {
+      "from": "Peanut Chuteny",
+      "to": "Peanut Chutney"
+    },
+    {
+      "from": "Plain rice",
+      "to": "Plain Rice"
+    },
+    {
+      "from": "Sambar+Peanut Chutney",
+      "to": "Sambar + Peanut Chutney"
+    },
+    {
+      "from": "Sambhar+ Peanut Chuteny",
+      "to": "Sambhar + Peanut Chutney"
+    },
+    {
+      "from": "Schezwan Chutney+Curd",
+      "to": "Schezwan Chutney + Curd"
+    },
+    {
+      "from": "Tea + Milk+ Coffee + Haldi",
+      "to": "Tea + Milk + Coffee + Haldi"
+    },
+    {
+      "from": "Veg biryani",
+      "to": "Veg Biryani"
+    },
+    {
+      "from": "Veg.Korma",
+      "to": "Veg Korma"
+    },
+    {
+      "from": "White Bread +Butter+Jam",
+      "to": "White Bread + Butter + Jam"
+    },
+    {
+      "from": "White Bread+Butter+Jam",
+      "to": "White Bread + Butter + Jam"
+    },
+    {
+      "from": "White Sauce pasta",
+      "to": "White Sauce Pasta"
+    },
+    {
+      "from": "white matar masala",
+      "to": "White Matar Masala"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "checksRun": 444,
+    "checksFailed": 0,
+    "failures": [],
+    "summary": {
+      "campusTrips": 80,
+      "kudasanTrips": 22,
+      "stops": 8,
+      "menuDays": 7
+    }
+  }
+}
