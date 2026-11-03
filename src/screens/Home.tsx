@@ -1,9 +1,9 @@
 import { useState, type FormEvent } from 'react';
-import { ArrowUp, ChevronRight, Info, MapPin, MoonStar, Route as RouteIcon, Settings, Sparkles, UtensilsCrossed } from 'lucide-react';
+import { ArrowLeftRight, ArrowUp, ChevronRight, Info, MapPin, MoonStar, Route as RouteIcon, Settings, Sparkles, UtensilsCrossed } from 'lucide-react';
 import { useData } from '../state/data';
 import { usePrefs } from '../state/prefs';
 import { navigate } from '../state/router';
-import { boardableStops, boardingExplainer, departureDayLabel, getNextBus, stopById, type Departure } from '../lib/bus';
+import { boardableStops, boardingExplainer, departureDayLabel, destinationsFrom, getNextBus, stopById, type Departure } from '../lib/bus';
 import { getMealStatus, highlights, rowText, stateOfMeal, type MealInfo } from '../lib/mess';
 import { formatCountdown, formatDateLong, greeting, relativeDayLabel } from '../lib/format';
 import { zoned } from '../lib/time';
@@ -13,7 +13,7 @@ import { StopPickerSheet } from '../components/StopPicker';
 import { Wordmark } from '../components/Logo';
 import { VoiceRouteButton } from '../components/VoiceRoute';
 import { setTrip, useTrip } from '../state/trip';
-import { describePair } from '../lib/voiceRoute';
+import { describePair, routeExists } from '../lib/voiceRoute';
 
 export function Home({ now }: { now: number }) {
   const { data } = useData();
@@ -48,7 +48,7 @@ export function Home({ now }: { now: number }) {
 
 function NextBusCard({ data, now }: { data: Dataset; now: number }) {
   const { prefs, update } = usePrefs();
-  const [picking, setPicking] = useState(false);
+  const [picking, setPicking] = useState<'from' | 'to' | null>(null);
   const trip = useTrip();
   const f = trip ?? { from: prefs.stopId, to: prefs.destinationId };
   const r = getNextBus({ data, now }, f, 2);
@@ -58,12 +58,12 @@ function NextBusCard({ data, now }: { data: Dataset; now: number }) {
   const tomorrowsFirst = next && next.serviceDate !== r.serviceDate;
   const today = zoned(now).dateKey;
 
-  const stopButton = (
-    <button onClick={() => setPicking(true)} className="inline-flex min-w-0 items-center gap-1 rounded-full bg-sunken px-3 py-1.5 text-[13px] font-medium hover:bg-line/70">
-      <MapPin size={14} className="shrink-0 text-accent" />
-      <span className="truncate">{stop ? `At ${stop.name}` : dest ? `To ${dest.name}` : 'Choose your stop'}</span>
-    </button>
-  );
+  /** A manual pick changes the trip you're looking at: the voice trip while one is active, otherwise your saved route. */
+  const apply = (next: { from: string | null; to: string | null }) => {
+    if (trip) setTrip(next);
+    else update({ stopId: next.from, destinationId: next.to, onboarded: true });
+  };
+  const canSwap = !!f.to && routeExists(data.bus, f.to, f.from);
 
   return (
     <Card className="p-5 sm:p-6" aria-labelledby="next-bus-label">
@@ -72,10 +72,20 @@ function NextBusCard({ data, now }: { data: Dataset; now: number }) {
           <span className="h-2 w-2 rounded-full bg-accent" />
           {tomorrowsFirst ? (zoned(next!.at).dateKey === today ? 'First bus this morning' : 'First bus tomorrow') : 'Next bus'}
         </h2>
-        <div className="flex min-w-0 items-center gap-2">
-          {stopButton}
-          <VoiceRouteButton bus={data.bus} current={f} onApply={(p) => setTrip(p)} onPickManually={() => setPicking(true)} />
-        </div>
+        <VoiceRouteButton bus={data.bus} current={f} onApply={(p) => setTrip(p)} onPickManually={() => setPicking('from')} />
+      </div>
+
+      <div className="mb-5 flex items-stretch gap-2" role="group" aria-label="Your trip">
+        <TripChip label="From" value={stop?.name ?? 'Choose a stop'} placeholder={!stop} onClick={() => setPicking('from')} />
+        <button
+          onClick={() => apply({ from: f.to, to: f.from })}
+          disabled={!canSwap}
+          aria-label="Swap From and To"
+          className="grid w-9 shrink-0 place-items-center rounded-full self-center h-9 text-accent hover:bg-accent-soft disabled:text-faint disabled:hover:bg-transparent"
+        >
+          <ArrowLeftRight size={17} />
+        </button>
+        <TripChip label="To" value={dest?.name ?? 'Anywhere'} placeholder={!dest} onClick={() => setPicking('to')} />
       </div>
 
       {trip && (
@@ -96,8 +106,8 @@ function NextBusCard({ data, now }: { data: Dataset; now: number }) {
           title={stop && dest ? `No buses from ${stop.name} to ${dest.name}` : 'No scheduled buses found'}
           body="None of the published routes make this trip. Try another stop or direction."
           action={
-            <button onClick={() => setPicking(true)} className="text-[15px] font-medium text-accent">
-              Change stop
+            <button onClick={() => setPicking('to')} className="text-[15px] font-medium text-accent">
+              Change where you're going
             </button>
           }
         />
@@ -127,17 +137,33 @@ function NextBusCard({ data, now }: { data: Dataset; now: number }) {
       )}
 
       <StopPickerSheet
-        open={picking}
-        onClose={() => setPicking(false)}
+        open={picking === 'from'}
+        onClose={() => setPicking(null)}
         title="Where do you catch the bus?"
         stops={boardableStops(data.bus)}
         value={f.from}
-        onPick={(id) => {
-          update({ stopId: id, destinationId: null, onboarded: true });
-          setTrip(null);
-        }}
+        onPick={(id) => apply({ from: id, to: id && f.to && routeExists(data.bus, id, f.to) ? f.to : null })}
+      />
+      <StopPickerSheet
+        open={picking === 'to'}
+        onClose={() => setPicking(null)}
+        title="Where are you going?"
+        stops={f.from ? destinationsFrom(data.bus, f.from) : data.bus.stops}
+        value={f.to}
+        anyLabel="Anywhere"
+        hints={false}
+        onPick={(id) => apply({ from: f.from, to: id })}
       />
     </Card>
+  );
+}
+
+function TripChip({ label, value, placeholder, onClick }: { label: string; value: string; placeholder: boolean; onClick: () => void }) {
+  return (
+    <button onClick={onClick} className="flex min-w-0 flex-1 flex-col rounded-tile bg-sunken px-3 py-2 text-left hover:bg-line/70" aria-label={`${label}: ${value}. Change`}>
+      <span className="text-[12px] text-muted">{label}</span>
+      <span className={cx('truncate text-[15px] font-medium', placeholder && 'text-muted')}>{value}</span>
+    </button>
   );
 }
 
